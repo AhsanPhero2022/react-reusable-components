@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tailwind base layer  */
+/* styles.css */
+
+@layer base {
+  /* Typography */
+  h1 {
+    @apply text-4xl font-bold mb-4;
+  }
+  h2 {
+    @apply text-3xl font-semibold mb-4;
+  }
+  h3 {
+    @apply text-2xl font-semibold mb-4;
+  }
+  p {
+    @apply text-base text-gray-800 leading-relaxed mb-4;
+  }
+  /* Links */
+  a {
+    @apply text-blue-500 hover:underline;
+  }
+  /* Buttons */
+  button {
+    @apply bg-blue-500 text-white px-4 py-2 rounded;
+  }
+  /* Form Elements */
+  input,
+  textarea {
+    @apply border rounded px-3 py-2 mb-4;
+  }
+}
+
+/* Tailwind components layer design */
+
+@layer components {
+  .btn {
+    @apply px-3 py-2 bg-green-500;
+    @apply rounded-none;
+  }
+}
